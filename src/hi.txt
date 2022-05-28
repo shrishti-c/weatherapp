@@ -1,0 +1,24 @@
+const api = {
+    key: "7358b1a11c438706329073b766ac9fc5",
+    base: "https://api.openweathermap.org/data/2.5/"
+}
+const Weather = () => {
+    const [location, setLocation] = useState("");
+    const [liveweather, setLiveweather] = useState({});
+
+    function changer(e) {
+        setLocation(e.target.value);
+    }
+
+    const search = (e) => {
+        if (e.key === "Enter") {
+            fetch(`${api.base}weather?q=${location}&units=metric&APPID=${api.key}`)
+                .then(res => res.json())
+                .then(result => {
+                    setLiveweather(result);
+                    setLocation("");
+                    console.log(result);
+                });
+        }
+
+    }

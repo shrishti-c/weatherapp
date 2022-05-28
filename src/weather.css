@@ -1,0 +1,54 @@
+.weather
+{
+    background-image: url("../public/images/deafult.jpg");
+    height: 650px;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.header>input
+{
+    width:320px;
+    height: 35px;
+    border-radius: 52px;
+    box-shadow: 5px 5px 10px #393838;
+    border-style: none;
+    margin-top: 120px;
+    padding: 9px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.date
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+.weather__update
+{
+    margin-top: 35px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.weather__update>h1
+{
+    font-weight: 900;
+    font-size: 35px;
+    color: white;
+    
+}
+
+.weather__update>p
+{
+    font-weight: 700;
+    font-size: 35px;
+    color: white;
+
+}
